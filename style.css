@@ -1,0 +1,95 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://st2.depositphotos.com/3308451/9786/i/450/depositphotos_97868064-stock-photo-black-crumpled-paper-texture.jpg');
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #f0f0f0; /* Color de texto claro */
+}
+
+#menu, #input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Espacio adicional sobre el menú */
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para destacar el contenido */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#input-area.hidden, #number-section.hidden, #name-section.hidden {
+    display: none;
+}
+
+#input-area {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#number-inputs, #name-inputs {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los inputs se ajusten en múltiples líneas si es necesario */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-range-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-range-container label {
+    margin-right: 10px;
+}
+
+.input-style {
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+    width: 50px; /* Ancho fijo para que los inputs sean consistentes */
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3; /* Color del botón */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* Color del texto del botón */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1976D2; /* Cambio de color al pasar el mouse */
+}
+
+#shuffle-button, #reset-button, #number-section button, #name-section button {
+    color: #fff; /* Color de texto blanco para los botones específicos */
+}
+
+#number-section h2, #name-section h2, #result {
+    color: #fff; /* Cambio de color a negro para los encabezados y el resultado */
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+}
